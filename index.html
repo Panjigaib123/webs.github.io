@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PANJI RADITYA GAIB</title>
+  <link rel="stylesheet" href="w3.css">
+</head>
+
+<body style="background-color: red;">
+
+  <div class="banner">
+    <img src="hogwarts.jpg" alt="" width="100%" height="250px">
+  </div>
+
+  <div class="w3-bar w3-cyan w3-card-4">
+    <button class="w3-bar-item w3-button" onclick="hogwarts('home')">home</button>
+    <button class="w3-bar-item w3-button" onclick="hogwarts('harrypotter')">harrypotter</button>
+    <button class="w3-bar-item w3-button" onclick="hogwarts('hermione')">hermione</button>
+    <button class="w3-bar-item w3-button" onclick="hogwarts('ronweasley')">ronweasley</button>
+	<button class="w3-bar-item w3-button" onclick="hogwarts('profile')">profile</button>
+ </div>
+
+  <div id="home" class="w3-container sihir w3-animate-fading" style="display: none;">
+    <center>
+    <h1>home</h1>
+    <img src="home.jpg" alt="home" width="300px">
+    <p>Hogwarts adalah sekolah sihir fiksi yang menjadi latar belakang utama dari novel Harry Potter karya J. K. Rowling1. Sekolah ini berada di Inggris dan dikisahkan sebagai salah satu sekolah sihir terbaik dunia.</p>
+    </center>
+  </div>
+  <div id="harrypotter" class="w3-container sihir w3-animate-Bottom" style="display: none;">
+    <center>
+    <h1>harrypotter</h1>
+    <img src="harrypotter.jpg" alt="harrypotter" width="300px">
+    <p>Harry Potter adalah seri tujuh novel fantasi yang mengisahkan tentang petualangan seorang penyihir remaja bernama Harry Potter dan sahabatnya, Ronald Bilius Weasley dan Hermione Jean Granger, yang merupakan pelajar di Sekolah Sihir Hogwarts Harry James Potter adalah seorang karakter penyihir fiktif yang merupakan protagonis dalam serial novel fantasi dan sihir oleh J.K. Rowling dan film yang berdasarkan novel ini.</p>
+  </div>
+  <div id="hermione" class="w3-container sihir w3-animate-top" style="display: none;">
+    <center>
+    <h1>hermione</h1>
+    <img src="hermione.jpg" alt="hermione" width="300px">
+    <p>Hermione adalah putri Menelaus dan Helen dari Troy Dalam buku Harry Potter karya J.K. Rowling, Hermione adalah seorang murid cerdas dan berani di asrama Gryffindor di Sekolah Sihir Hogwarts Hermione adalah sahabat baik Harry Potter dan Ron Weasley Nama Hermione berasal dari kata Yunani yang berarti pembawa pesan.</p>
+    </center>
+  </div>
+   <div id="ronweasley" class="w3-container sihir w3-animate-top" style="display: none;">
+    <center>
+    <h1>ronweasley</h1>
+    <img src="ronweasley.jpg" alt="ronweasley" width="300px">
+    <p>Ron Weasley adalah salah satu karakter utama dalam seri Harry Potter. Dia adalah sahabat Harry Potter dan Hermione Granger, serta anggota keluarga Weasley yang berdarah murni.</p>
+    </center>
+  </div>
+  <div id="profile" class="w3-container sihir w3-animate-zoom" style="display: none;">
+    <center>
+    <h1>profile</h1>
+    <img src="profile.jpg" alt="profile" width="300px">
+    <p>Nim:10123223
+	   NAMA:Panji Raditya Gaib
+	   Kelas:IF-6
+    </p>
+    </center>
+
+</div>
+
+</body>
+
+<script>
+function hogwarts(merk) {
+    var i;
+    var x = document.getElementsByClassName("sihir");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(merk).style.display = "block";
+  }
+  </script>
+  
+</html>
+  
+
